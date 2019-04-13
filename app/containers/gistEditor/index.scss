@@ -6,11 +6,14 @@
 .CodeMirror {
   @extend .font-style-base;
   height: auto;
+	background: #272822;
+	color: #FFF;
 }
 
 .CodeMirror-gutters {
-  border-right: 1px solid #dadee3;
-  background-color: #f6f5f6;
+	border-right: 1px solid #404040;
+	background-color: #333333;
+	color: #ffffff;
 }
 
 .CodeMirror-scroll {

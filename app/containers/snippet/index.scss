@@ -7,7 +7,22 @@
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
-
+body{
+	background: #272822;
+}
+.collapsable-code-area.collapse {
+    overflow: auto;
+}
+.dialog{
+	color:#FFF;
+	button {
+		background: transparent;
+		border: none;
+	}
+	a{
+		color:#FB2C7B;
+	}
+}
 .snippet-box {
 
   .header-table {
@@ -65,12 +80,12 @@
       height: 28px;
       width: 28px;
       transform: translate(-50%, -50%);
-      fill: #6b6a6f;
+      fill: #E79627;
       transition: fill .15s;
     }
 
     &:hover svg {
-      fill: #2E2C33;
+      fill: #FFFFFF;
     }
   }
 
@@ -86,7 +101,7 @@
 
   .snippet-code {
     min-height: 100vh;
-    border-color: #dadee3;
+    border-color: #272822;
     border-radius: 0;
     border-bottom: none;
     margin-bottom: 0;
@@ -98,8 +113,9 @@
       width: 100%;
       z-index: 5;
       background-color: #fff;
+	    background: #32424A;
       border: none!important;
-      color: inherit;
+      color: #FFF;
       padding: 12px 15px;
 
       &:after {
@@ -133,6 +149,7 @@
     @extend .font-style-base;
     border: 0px;
     border-bottom: 1px solid #dadee3;
+	  border-bottom: 1px solid #32424A;
     overflow: hidden;
   }
 
@@ -143,6 +160,7 @@
     border-radius: 0;
     font-size: 13px;
     margin: 0 10px;
+	  background-color: #293338;
   }
 
   .file-header {
@@ -154,10 +172,14 @@
     background-color: #f6f5f6;
     border-top: 1px solid #dadee3;
     border-bottom: 1px solid #dadee3;
+	  border-top: 1px solid #526873;
+    border-bottom: 1px solid #526873;
+	  background-color: #32424A;
   }
 
   .file-expand {
     font-size: 15px;
+	  color: #E79627;
 
     &::before {
       content: '';
@@ -188,7 +210,7 @@
   .file-header-control {
 
     font-size: 12px;
-
+	  color: #A6E22E;
     &:not(:last-child) {
       margin-right: 10px;
     }
@@ -196,6 +218,10 @@
 
   .file-header-md {
     @extend .file-header;
+
+	  border-top: 1px solid #526873;
+    border-bottom: 1px solid #526873;
+	  background-color: #32424A;
     // background: rgba(0,0,0,0.03);
     // border: rgb(204,204,204) 1px solid;
     // border-radius: 5px 5px 0px 0px;
@@ -281,6 +307,7 @@
     padding-right: 20px;
     display: inline-block;
     color: rgba(0,0,0,0.25);
+    color:rgba(255, 255, 255, 0.25);
     width: 42px;
     font-size: 12px;
     font-style: normal;

@@ -2,7 +2,9 @@
   margin: 0px;
   max-height: 100vh;
 }
-
+#container{
+	overflow-y: hidden;
+}
 .app-container {
   .font-style-base {
     font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
@@ -24,6 +26,9 @@
   }
 
   .SplitPane {
+	  background: #272822;
+	  color: #66D9EF;
+	  color: #FFFFFF;
     position: relative !important;
   }
 
