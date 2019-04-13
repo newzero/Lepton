@@ -10,6 +10,8 @@
 
 **Lepton** is a lean code snippet manager based on *GitHub Gist*. [Check out its latest release.](https://github.com/hackjutsu/Lepton/releases)
 
+![Screenshot](./docs/img/darkmode_preview.png)
+
 - Unlimited public/private snippets
 - Unlimited tags
 - Language groups
